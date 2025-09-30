@@ -125,17 +125,27 @@ namespace hafta1
 
         private void button8_Click(object sender, EventArgs e)
         {
-            for(int i=0; i <=100; i++)
+            for (int i = 0; i <= 100; i++)
             {
-                if (i%2 ==0)
+                if (i % 2 == 0)
                 {
                     listBox2.Items.Add(Convert.ToString(i));
                 }
-                else 
+                else
                 {
                     listBox1.Items.Add(Convert.ToString(i));
                 }
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

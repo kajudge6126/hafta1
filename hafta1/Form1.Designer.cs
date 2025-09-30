@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
             textBox1 = new TextBox();
             panel1 = new Panel();
@@ -51,10 +52,14 @@
             listBox2 = new ListBox();
             listBox1 = new ListBox();
             button8 = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            dosyaToolStripMenuItem = new ToolStripMenuItem();
+            düzenToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             groupBox1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -291,6 +296,25 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { dosyaToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(181, 48);
+            // 
+            // dosyaToolStripMenuItem
+            // 
+            dosyaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { düzenToolStripMenuItem });
+            dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
+            dosyaToolStripMenuItem.Size = new Size(180, 22);
+            dosyaToolStripMenuItem.Text = "Dosya";
+            // 
+            // düzenToolStripMenuItem
+            // 
+            düzenToolStripMenuItem.Name = "düzenToolStripMenuItem";
+            düzenToolStripMenuItem.Size = new Size(180, 22);
+            düzenToolStripMenuItem.Text = "Düzen";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -302,7 +326,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "qqc";
+            Text = " ";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -311,6 +335,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             groupBox1.ResumeLayout(false);
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -339,5 +364,8 @@
         private Button button8;
         private ListBox listBox2;
         private ListBox listBox1;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem dosyaToolStripMenuItem;
+        private ToolStripMenuItem düzenToolStripMenuItem;
     }
 }
