@@ -48,9 +48,13 @@
             textBox4 = new TextBox();
             textBox3 = new TextBox();
             groupBox1 = new GroupBox();
+            listBox2 = new ListBox();
+            listBox1 = new ListBox();
+            button8 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -249,13 +253,43 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(listBox2);
+            groupBox1.Controls.Add(listBox1);
+            groupBox1.Controls.Add(button8);
             groupBox1.Location = new Point(534, 34);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(215, 313);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 15;
+            listBox2.Location = new Point(114, 60);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(95, 229);
+            listBox2.TabIndex = 2;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(6, 60);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(95, 229);
+            listBox1.TabIndex = 1;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(72, 22);
+            button8.Name = "button8";
+            button8.Size = new Size(75, 23);
+            button8.TabIndex = 0;
+            button8.Text = "Sayı Çek";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // Form1
             // 
@@ -276,6 +310,7 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -301,5 +336,8 @@
         private Button button7;
         public Label label5;
         private GroupBox groupBox1;
+        private Button button8;
+        private ListBox listBox2;
+        private ListBox listBox1;
     }
 }

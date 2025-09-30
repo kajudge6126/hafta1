@@ -122,5 +122,20 @@ namespace hafta1
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            for(int i=0; i <=100; i++)
+            {
+                if (i%2 ==0)
+                {
+                    listBox2.Items.Add(Convert.ToString(i));
+                }
+                else 
+                {
+                    listBox1.Items.Add(Convert.ToString(i));
+                }
+            }
+        }
     }
 }
